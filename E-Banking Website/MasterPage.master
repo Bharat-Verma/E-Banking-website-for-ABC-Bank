@@ -1,0 +1,294 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+    <title>ABC Bank</title>
+
+
+    <link href="css.css" rel="stylesheet" type="text/css" />
+    <link href="styles/bootstrap.css" rel="stylesheet" />
+    <link href="styles/bootstrap.min.css" rel="stylesheet" />
+    <style type="text/css">
+        
+        .auto-style3 {
+            height: 176px;
+        }
+
+        .auto-style5 {
+            color: #FFCC66;
+        }
+
+        .auto-style6 {
+            color: #FFFFFF;
+        }
+
+        .auto-style7 {
+            color: #000000;
+            height: 451px;
+        }
+
+        .auto-style9 {
+            height: 447px;
+        }
+
+        .auto-style11 {
+            height: 588px;
+        }
+
+        .auto-style12 {
+            height: 607px;
+            width: 760px;
+            margin-top: 0px;
+        }
+
+        .auto-style13 {
+            height: 628px;
+        }
+
+        .auto-style14 {
+            height: 590px;
+            width: 241px;
+        }
+
+        .auto-style15 {
+            height: 615px;
+        }
+
+        .auto-style16 {
+            height: 193px;
+        }
+
+        .auto-style18 {
+            height: 953px;
+            width: 813px;
+        }
+
+        .auto-style21 {
+            color: #FFCC66;
+            height: 100px;
+        }
+
+        .auto-style22 {
+            color: #FFCC66;
+            width: 4%;
+        }
+
+        .auto-style23 {
+            width: 4%;
+        }
+
+        .auto-style24 {
+            height: 715px;
+        }
+
+        .auto-style25 {
+            height: 15px;
+        }
+
+        .auto-style26 {
+            float: left;
+            font-size: 18px;
+            line-height: 20px;
+            width: 151px;
+            padding: 15px;
+        }
+        .auto-style27 {
+            float: left;
+            font-size: 18px;
+            line-height: 20px;
+            width: 150px;
+            padding: 15px;
+        }
+
+        </style>
+</head>
+
+<body>
+
+    <table border="0" align="center" cellpadding="0" cellspacing="0" class="auto-style18">
+        <tr>
+            <td align="left" valign="top" bgcolor="#000000">
+                <form action="Home.aspx" runat="server">
+                    <div>
+                        <asp:ScriptManager ID="ScriptManager1" runat="server">
+                        </asp:ScriptManager>
+                        <asp:UpdatePanel ID="BannerPanel" runat="server" UpdateMode="Conditional">
+                            <ContentTemplate>
+                                <asp:Timer ID="Timer1" runat="server" OnTick="gettickvalue" Interval="3000">
+                                </asp:Timer>
+
+                                <asp:Image ID="imgBanner" ImageUrl="~/images/banner_1.png" runat="server" Width="817px" />
+                            </ContentTemplate>
+                        </asp:UpdatePanel>
+                    </div>
+                </form>
+                <div class="navbar navbar-inverse navbar-fixed-top">
+                    <div class="container container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" runat="server" href="~/Home.aspx">ABC Bank</a>
+                        </div>
+                        <div class="navbar-collapse collapse" id="myNavbar">
+                            <ul class="nav navbar-nav">
+                                <li><a runat="server" href="~/Home.aspx">Home</a></li>
+                                <li><a runat="server" href="~/AboutUs.aspx">About Us</a></li>
+                                <li><a runat="server" href="~/CustomerCare.aspx">Customer Care</a></li>
+                                <li><a runat="server" href="~/ContactUs.aspx">Contact Us</a></li>
+                            </ul>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a runat="server" href="~/Login.aspx">Log in</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <%--<table border="0" align="center" cellpadding="0" cellspacing="0" class="auto-style1" style="background-color: #333333; background-image: url('/images/op.jpg'); color: #CC0066;">--%>
+                    <%--<tr>--%>
+                        <%--<td height="40" align="center" valign="middle" class="auto-style26" style="background-image: url('/images/AbcBanklogo - Copy.JPG')"><a href="~/Home.aspx"></a></td>
+                        <td width="126" height="39" align="center" valign="middle" class="menu"><a href="Home.aspx" style="color: #FFFFFF">Home</a></td>
+                        <td width="126" align="center" valign="middle" class="menu"><a href="AboutUs.aspx" style="color: #FFFFFF">About Us</a></td>
+                        <td width="133" align="center" valign="middle" class="menu"><a href="Login.aspx" style="color: #FFFFFF">Login</a></td>
+                        <td width="121" align="center" valign="middle" class="menu"><a href="CustomerCare.aspx" style="color: #FFFFFF">Customer Care</a></td>
+                        <td width="112" align="center" valign="middle" class="menu"><a href="ContactUs.aspx" style="color: #FFFFFF">Contact Us</a></td>--%>
+                        <div class="navbar">
+                            <div class="container container-fluid">
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle" >
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                    <a class="auto-style27" runat="server" href="~/Home.aspx">ABC Bank</a>
+                                </div>
+                                <div class="navbar-collapse collapse" id="myNavbar1">
+                                    <ul class="nav navbar-nav">
+                                        <li><a runat="server" href="~/Home.aspx">Home</a></li>
+                                        <li><a runat="server" href="~/AboutUs.aspx">About Us</a></li>
+                                        <%--<li><a runat="server" href="~/Login.aspx">Login</a></li>--%>
+                                        <li><a runat="server" href="~/CustomerCare.aspx">Customer Care</a></li>
+                                        <li><a runat="server" href="~/ContactUs.aspx">Contact Us</a></li>
+                                    </ul>
+                                    <ul class="nav navbar-nav navbar-right">
+                                <li><a runat="server" href="~/Login.aspx">Log in</a></li>
+                            </ul>
+                                </div>
+                            </div>
+                        </div>
+                    <%--</tr>--%>
+                <%--</table>--%>
+            </td>
+        </tr>
+        <tr>
+            <td align="left" valign="top" style="background-image: none; background-repeat: repeat-x; background-color: #FFFFFF; color: #000000;" class="auto-style15">
+                <table border="0" align="right" cellpadding="0" cellspacing="0" class="auto-style12">
+                    <tr>
+                        <td width="500" align="left" valign="top" style="background-image: none" class="auto-style13">
+                            <table width="477" border="0" cellspacing="0" cellpadding="0" style="margin-bottom: 0px; background-image: none;" class="auto-style24">
+                                <tr>
+                                    <td class="auto-style25"></td>
+                                </tr>
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                    <tr>
+                                        <td align="left" valign="top" style="padding-top: 24px; font-style: normal; font-size: large; background-color: #FFFFFF; background-repeat: repeat;" class="auto-style7">ABC Bank online is the Internet banking portal for ABC BANK. The portal provides anywhere,anytime,online access to accounts for ABC Bank&#39;s retail and Corporation customers. The infrastructure supports unified, secure access to banking services for accounts in over 150 branches across US.<br />
+                                            The Retail banking application is an integration of several functional areas, and enables customers to:<br />
+                                            <br />
+                                            &nbsp; -Transfer funds to own/third party accounts(Inter Bank)<br />
+                                            &nbsp; -Generate account statements<br />
+                                            &nbsp; -Use epay for utility bill payments<br />
+                                            <br />
+                                        </td>
+                                    </tr>
+                                </asp:ContentPlaceHolder>
+                                <tr>
+                                    <td align="left" valign="top" style="background-position: -395px -431px; padding-top: 30px; background-image: url('/images/money_pounds.jpg'); background-repeat: inherit; background-attachment: inherit; font-size: x-large; color: #FF0066; font-style: italic;" class="auto-style3">&nbsp;&nbsp;&nbsp;&nbsp; <span class="auto-style6">Now home loans at 1%&nbsp; low Now home loans at 1%&nbsp; lower interest than other banks....</span></td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td width="260" align="left" valign="top" style="background-image: none" class="auto-style13">
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                                <table border="0" cellspacing="0" cellpadding="0" style="background-image: none;" class="auto-style14">
+                                    <tr>
+                                        <td align="left" valign="top">
+                                            <table width="242" border="0" cellspacing="0" cellpadding="0" style="background-image: url('/images/15WUk.jpg');" class="auto-style11">
+                                                <tr>
+                                                    <td align="left" valign="top" bgcolor="#e9e9e9" style="background-image: url('/images/15WUk.jpg');" class="auto-style9">
+                                                        <table width="90%" border="0" align="center" cellpadding="0" cellspacing="0">
+                                                            <tr>
+                                                                <td align="left" valign="top" style="padding-top: 30px;" class="auto-style5">
+                                                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                                        <tr>
+                                                                            <td align="left" valign="top" class="auto-style22">&nbsp;</td>
+                                                                            <td width="14%" align="left" valign="top" class="auto-style5" style="padding-left: 10px; text-decoration: underline; font-size: large;">
+                                                                                <asp:HyperLink CssClass="hyperlink" runat="server"
+                                                                                    NavigateUrl="http://www.banknews.com/" Target="_blank">Latest Banking News</asp:HyperLink>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td align="left" valign="top" class="auto-style22">&nbsp;</td>
+                                                                            <td width="86%" align="left" valign="top" style="padding-left: 10px; font-size: large;" class="auto-style5">
+                                                                                <br />Oct 2016<br />
+                                                                                <br />Dollar value is at its lowest due to current account deficit.<br />
+                                                                                <br />
+                                                                                <br /></td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="left" valign="top" style="padding-top: 30px;" class="auto-style5">
+                                                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                                        <tr>
+                                                                            <td align="left" valign="top" class="auto-style23">&nbsp;</td>
+                                                                            <td width="86%" align="left" valign="top" style="padding-left: 10px; font-size: large;" class="auto-style5">Nov 2016<br />
+                                                                                <br />2% increase on interest rate on personel loans in private banks.<br />
+                                                                                <br />
+                                                                                <br /></td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="left" valign="top" style="padding-top: 30px;" class="auto-style5">
+                                                                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="auto-style16">
+                                                                        <tr>
+                                                                            <td align="left" valign="top" class="auto-style23"></td>
+                                                                            <td width="86%" align="left" valign="top" style="padding-left: 10px; font-size: large;" class="auto-style21">Dec 2016<br />
+                                                                                <br />Gold down to $1257.52. Another low in this month.<br />
+                                                                                <br />
+                                                                                <br />
+                                                                                <br />
+                                                                                <br /></td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </asp:ContentPlaceHolder>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td align="center" valign="middle" class="copyright" style="background-color: #4cff00; color: #000000">Copyright © 2016
+                <asp:HyperLink CssClass="hyperlink" runat="server"
+                    NavigateUrl="~/Home.aspx">abcbankonline.com</asp:HyperLink>
+                All Rights Reserved.</td>
+        </tr>
+    </table>
+</body>
+</html>
